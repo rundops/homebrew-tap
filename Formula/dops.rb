@@ -11,7 +11,7 @@ class Dops < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rundops/dops/releases/download/v0.12.0/dops_0.12.0_darwin_amd64.tar.gz"
-      sha256 "71a7fddcfad9960931bf8da666587bfba020f0c817487bb7381a056dad0ea32b"
+      sha256 "e7cb5a9d5c96fc04c855319e074b9f15e25a3e9b8bf8305584c2c5b6010c0d4a"
 
       define_method(:install) do
         bin.install "dops"
@@ -19,7 +19,7 @@ class Dops < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/rundops/dops/releases/download/v0.12.0/dops_0.12.0_darwin_arm64.tar.gz"
-      sha256 "af1847cfad8c1730aef8eb6b5ad173ce2cae893428e2e1c0a07f16ddf92478e2"
+      sha256 "9a64d1cc9c86f12d8a541b0c71d28f84322b7ea870b353deccf6d05757f66462"
 
       define_method(:install) do
         bin.install "dops"
@@ -30,14 +30,14 @@ class Dops < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/rundops/dops/releases/download/v0.12.0/dops_0.12.0_linux_amd64.tar.gz"
-      sha256 "2aa9cf1df76ff9c9b3552b1add5393fb694563c43d05f0d4ec63a2ef360942c1"
+      sha256 "0bc0cf8e7517575dc566bbed1e86088bd1a48bc8aea9acf31e26ab146ee4c786"
       define_method(:install) do
         bin.install "dops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rundops/dops/releases/download/v0.12.0/dops_0.12.0_linux_arm64.tar.gz"
-      sha256 "1d938ca6ce750f1c5fef7b3d876897a47c99e788069603b51381e187ca6ba05b"
+      sha256 "6b26c5d6bc52d552b1f3b95296f8df9ac1bac286a6f8dbe1777fe10e1fb8f1ce"
       define_method(:install) do
         bin.install "dops"
       end
