@@ -5,21 +5,21 @@
 class Dops < Formula
   desc "Developer Operations TUI — browse, parameterize, and execute runbooks from the terminal"
   homepage "https://github.com/rundops/dops"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rundops/dops/releases/download/v0.12.0/dops_0.12.0_darwin_amd64.tar.gz"
-      sha256 "e7cb5a9d5c96fc04c855319e074b9f15e25a3e9b8bf8305584c2c5b6010c0d4a"
+      url "https://github.com/rundops/dops/releases/download/v0.13.0/dops_0.13.0_darwin_amd64.tar.gz"
+      sha256 "f43a0332ff611505047f832a8be783d057d3f211aa46e6045f2b273c7f6609c7"
 
       define_method(:install) do
         bin.install "dops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rundops/dops/releases/download/v0.12.0/dops_0.12.0_darwin_arm64.tar.gz"
-      sha256 "9a64d1cc9c86f12d8a541b0c71d28f84322b7ea870b353deccf6d05757f66462"
+      url "https://github.com/rundops/dops/releases/download/v0.13.0/dops_0.13.0_darwin_arm64.tar.gz"
+      sha256 "49f42c9027f57ac4ce51107b6a6214dd3b7d6914b9faf9c1bdd34d107db3e7fd"
 
       define_method(:install) do
         bin.install "dops"
@@ -29,15 +29,15 @@ class Dops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rundops/dops/releases/download/v0.12.0/dops_0.12.0_linux_amd64.tar.gz"
-      sha256 "0bc0cf8e7517575dc566bbed1e86088bd1a48bc8aea9acf31e26ab146ee4c786"
+      url "https://github.com/rundops/dops/releases/download/v0.13.0/dops_0.13.0_linux_amd64.tar.gz"
+      sha256 "fa19d282e9bc721e7ede53038555cda14b76f169dd69b02aa76f1f54b09a198b"
       define_method(:install) do
         bin.install "dops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rundops/dops/releases/download/v0.12.0/dops_0.12.0_linux_arm64.tar.gz"
-      sha256 "6b26c5d6bc52d552b1f3b95296f8df9ac1bac286a6f8dbe1777fe10e1fb8f1ce"
+      url "https://github.com/rundops/dops/releases/download/v0.13.0/dops_0.13.0_linux_arm64.tar.gz"
+      sha256 "1253dfd89a13193550670ab907739b04f8c220c95b891ace1aa3a4e0e5b180a9"
       define_method(:install) do
         bin.install "dops"
       end
